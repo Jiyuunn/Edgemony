@@ -1,0 +1,92 @@
+*.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+ background-image: url(img/gradiente.png);
+ background-size: 100%;  }
+
+h1 {
+    color: purple;
+
+}
+
+h2 { 
+    color: darkorchid;
+}
+
+span {
+    color: white;
+
+}
+
+span:hover {
+    color: blueviolet;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+p a {
+    color: hotpink;
+    text-decoration: none;
+
+}
+
+p b {
+    color: aqua;
+}
+
+img {
+    border-radius: 10px;
+}
+
+img:hover {
+    opacity: 80%;
+}
+
+
+
+.box {
+
+    background-color: blueviolet;
+    width:400px;
+    height:400px;
+    background-color: aqua;
+    margin: 50px 50px;
+    box-shadow: 5px 10px purple;
+}  
+
+
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    width: 50%; /* dimensione del 50% per desktop */
+    height: 150px;
+    background-color: rgb(199, 94, 255);
+    border: 2px solid #ffe1f9;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .item {
+      width: 25%; /* dimensione del 25% per mobile */
+    }
+  }
+
+
+@media screen and (min-width:576px) {
+        .background-color {
+           background-color: lavender;
+        }
