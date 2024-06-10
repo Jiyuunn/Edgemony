@@ -1,0 +1,9 @@
+{
+    "api_base_url": "https://api.themoviedb.org/3",
+    "image_base_url": "https://image.tmdb.org/t/p/w500",
+    "endpoints": {
+        "popular": "movie/popular",
+        "top_rated": "movie/top_rated"
+    },
+    "pagination_limit": 20
+}
