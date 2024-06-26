@@ -16,7 +16,6 @@ const articles = [
     userId: 2,
     author: 'Author 2'
   },
-  // Aggiungi altri articoli come necessario
 ];
 
 const Main = () => {
