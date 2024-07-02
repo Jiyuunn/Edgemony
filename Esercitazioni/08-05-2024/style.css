@@ -1,0 +1,535 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: 35px;
+    color: #33446A;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.starrynight {
+    background-image: url(src/starrynight.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.719);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.btn {
+    z-index: 1;
+    background-color: #fbd880;
+    color: rgb(9, 9, 51);
+    border: 2px solid #33446A;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #33446A;
+    color: #fbd880;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #33446A
+}
+
+.btn a:hover {
+    color: #fbd880;
+}
+
+.autoritrattovg {
+    width: 300px;
+    height: 350px;
+    border-radius: 21%;
+    border: 2px solid #fbd880;
+    z-index:1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.starrynight h1 {
+    color: rgb(246, 247, 255);
+    font-size: 70px;
+    text-shadow: 1px 1px 1px rgb(7, 7, 6);
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-style: normal;
+    z-index: 1;
+}
+
+.starrynight h2 {
+    font-size: 50px;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.background-presentazione {
+    background-color: #33446A;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.background-presentazione .icone {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.icona {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.iconsn, .iconvg {
+    border-style: dotted;
+    border-radius: 20px;
+    padding: 50px;
+    border-color: #fbd880;
+    width: 500px;
+}
+
+.iconsn h2, .iconvg h2 {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fbd880;
+}
+
+.iconsn p, .iconvg p {
+    padding-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(241, 242, 201);
+}
+
+.contenitore {
+    display: flex;
+    width: 100%;
+    padding: 100px 100px;
+    align-items: center;
+}
+
+.img-vvg {
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 100px;
+    animation: muoviSuEGiu 3s infinite ease-in-out;
+}
+
+@keyframes muoviSuEGiu {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.citazioni h2 {
+    padding-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.citazioni p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #56A6B1;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.le-opere {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #33446A;
+    padding-bottom: 40px;
+}
+
+.container-1, .container-3 {
+    background-color: rgba(100, 148, 237, 0.182);
+}
+
+.container-1, .container-2, .container-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.container-1 h2 {
+    margin-bottom: 50px;
+}
+
+.descrizione-mandorlo {
+    width: 50%;
+    padding-left:100px;
+    padding-right:50px;
+}
+
+.descrizione-mandorlo h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color:  #33446A;
+}
+
+.descrizione-mandorlo p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding-top: 10px;
+    line-height: 1.6;
+}
+
+.mandorlo img {
+    width: 600px;
+    height: 600px;
+    border-radius: 10%;
+    padding-right: 15px;
+    transition: transform 2s ease;
+}
+
+.mandorlo:hover img {
+    transform: translateX(-100px);
+}
+
+.girasoli img {
+    width: 600px;
+    height: 600px;
+    border-radius: 10%;
+    padding-left: 15px;
+    transition: transform 2s ease;
+}
+
+.girasoli:hover img {
+    transform: translateX(100px);
+}
+
+.descrizione-girasoli {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+.descrizione-girasoli h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #33446A;
+}
+
+.descrizione-girasoli p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding-top: 10px;
+    line-height: 1.6;
+}
+
+.descrizione-iris {
+    width: 50%;
+    padding-left:100px;
+    padding-right: 50px;
+}
+
+.descrizione-iris h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #33446A;
+}
+
+.descrizione-iris p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding-top: 10px;
+    line-height: 1.6;
+}
+
+.iris img {
+    width: 600px;
+    height: 600px;
+    border-radius: 10%;
+    padding-right: 15px;
+    transition: transform 2s ease;
+}
+
+.iris:hover img {
+    transform: translateX(-100px);
+}
+
+.nottestellata {
+    height: 600px;
+    background-image: url(src/nottestellata.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.366);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    flex-wrap: wrap;
+}
+
+.card-text {
+    margin-bottom: 40px;
+    color: #fbd880;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .btn {
+    background-color: #33446A;
+    color: #fbd880;
+}
+
+.card .btn:hover {
+    background-color: #fbd880;
+    color: #33446A;
+}
+
+.card .btn a {
+    text-decoration: none;
+    color: #fbd880;
+}
+
+.card .btn a:hover {
+    color: #33446A;
+}
+
+.container-5 {
+    padding: 100px;
+}
+
+.titolo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titolo h2 {
+    margin-bottom: 20px;
+}
+
+.abbonamenti {
+    display: flex;
+}
+
+.card-price {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: rgb(51,68,106);
+    background: linear-gradient(0deg, rgba(51,68,106,1) 0%, #fffcf5 100%);
+    padding: 40px 60px;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+}
+
+.card-price h3 {
+    margin-bottom: 20px;
+    color: #33446A;
+}
+
+.card-price span {
+    font-size: 30px;
+    color: #33446A;
+    margin-bottom: 90px;
+    font-weight: 600;
+}
+
+.card-price p {
+    margin-bottom: 40px;
+    text-align: justify;
+    line-height: 1.6;
+    color: #fffcf5;
+}
+
+.container-6 {
+    padding: 100px;
+    text-align: center;
+    background-color: #fbd880;
+}
+
+.container-6 p {
+    margin-bottom: 10px;
+    color: #33446A;
+}
+
+.container-6 span {
+    color: #56A6B1;
+    text-decoration: dotted underline;
+}
+
+.container-6 span:hover {
+    cursor: pointer;
+    color: #33446A;
+}
+
+@media screen and (max-width: 768px) {
+
+    *{
+        text-align: center;
+    }
+
+    .iconsn {
+        margin-bottom: 20px;
+    }
+    
+    .contenitore {
+        flex-direction: column;
+
+        margin: auto;
+    }
+
+    .img-vvg {
+        object-fit: cover;
+        margin: 20px auto;
+        animation: none;
+    }
+
+    .descrizione-iris, .descrizione-girasoli, .descrizione-mandorlo {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .container-1, .container-2, .container-3 {
+        justify-content: center;
+    }
+
+    .iris img, .girasoli img, .mandorlo img {
+        height: 700px;
+        object-fit: cover;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 50px;
+    }
+
+    .abbonamenti {
+        flex-direction: column;
+    }
+
+    .card-price {
+        margin: 20px auto;
+        padding: 50px;
+        width: 100%;
+    }
+
+    .container-6 {
+        padding: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    *{
+        text-align: center;
+    }
+
+    .img-vvg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: auto;
+    }
+
+    .citazioni p {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 30px;
+    }
+    
+    .descrizione-iris, .descrizione-girasoli, .descrizione-mandorlo {
+        padding: 30px;
+    }
+
+    .iris img, .girasoli img, .mandorlo img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 50px;
+    }
+
+    .contenitore{
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .container-1, .container-2, .container-3 {
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .container-5 {
+        padding: 30px;
+    }
+
+    .abbonamenti {
+        flex-direction: column;
+    }
+
+    .card-price {
+        margin: 20px auto;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .container-6 {
+        padding: 30px;
+    }
+}
