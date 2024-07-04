@@ -1,0 +1,13 @@
+/* src/index.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e0f7fa;
+}
+
+h2 {
+  color: #333;
+}
