@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Legend Movies</h1>
+        <input type="text" id="searchBar" placeholder="Search for a movie...">
+        <div id="buttons">
+            <button data-endpoint="popular">Popular</button>
+            <button data-endpoint="top_rated">Top Rated</button>
+        </div>
+    </header>
+    <main id="movie-container"></main>
+    <div id="pagination">
+        <button id="prevPage">Previous</button>
+        <button id="nextPage">Next</button>
+    </div>
+    <script src="keys.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

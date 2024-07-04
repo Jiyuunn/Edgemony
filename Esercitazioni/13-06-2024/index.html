@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Interaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>API Interaction</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>POST Data</h2>
+            <form id="postForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="price" placeholder="Price" required>
+                <input type="file" id="fileInput">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>PUT Data</h2>
+            <form id="putForm">
+                <input type="text" id="putId" placeholder="Product ID" required>
+                <input type="text" id="putTitle" placeholder="New Title">
+                <input type="text" id="putDescription" placeholder="New Description">
+                <input type="number" id="putPrice" placeholder="New Price">
+                <button type="submit">Update Product (PUT)</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>PATCH Data</h2>
+            <form id="patchForm">
+                <input type="text" id="patchId" placeholder="Product ID" required>
+                <input type="text" id="patchTitle" placeholder="New Title">
+                <input type="text" id="patchDescription" placeholder="New Description">
+                <input type="number" id="patchPrice" placeholder="New Price">
+                <button type="submit">Update Product (PATCH)</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>DELETE Data</h2>
+            <form id="deleteForm">
+                <input type="text" id="deleteId" placeholder="ID to Delete" required>
+                <button type="submit">Delete</button>
+            </form>
+            <div id="deleteFeedback"></div>
+        </section>
+
+        <section>
+            <h2>API Data</h2>
+            <div id="apiData" class="card-container"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
