@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(/img/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    
+    font-size: 50px;
+    margin:  0 40px;
+    color: rgba(12, 30, 38, 0.573);
+    color: rgba(12, 30, 38, 0.573);
+    text-shadow: 2px 2px 30px rgba(255, 255, 255, 0.5);
+}
+
+h1:hover {
+    color: #898298;
+    transition: color 5s;
+    scale: 1.1;
+    transition: 5s;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    text-align: center;
+}
+
+#parent, #modal, input, button {
+    margin: 10px;
+}
+
+#parent {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #6b5b95;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #f0e6f6;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #9b59b6;
+    transform: scale(1.1);
+    transition: transform 0.8s ease;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f6f5f3; 
+}
+
+input:focus {
+    outline: none;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}

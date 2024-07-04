@@ -1,0 +1,36 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+  transition: transform 0.2s;
+  margin: 20px;
+}
+
+.App-logo:hover {
+  transform: scale(1.1);
+}
+
+.cute-button {
+  background-color: var(--button-bg-color);
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+.cute-button:hover {
+  background-color: var(--button-hover-bg-color);
+  transform: scale(1.05);
+}
