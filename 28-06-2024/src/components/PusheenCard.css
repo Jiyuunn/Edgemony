@@ -1,0 +1,27 @@
+.pusheen-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    max-width: 300px;
+    margin: 20px;
+  }
+  
+  .pusheen-card__image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .pusheen-card__title {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .pusheen-card__description {
+    font-size: 1em;
+    color: #777;
+    margin: 0 10px 20px;
+  }
+  

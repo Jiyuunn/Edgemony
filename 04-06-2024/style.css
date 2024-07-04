@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/sky.jpg);
+    margin-top: 250px;
+    font-family: "Urbanist", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Stili per l'orologio */
+.orologio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.219);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.ora,
+.minuti,
+.secondi {
+    margin: 0 5px;
+}
+
+.ora {
+    color: #e7b2de;
+}
+
+.minuti {
+    color: #bea9ed;
+}
+
+.secondi {
+    color: #b5bcf4;
+}
+
+.separatore {
+    color: #ffffff4e;
+    font-size: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+/* Stili per i bottoni */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#start {
+    background-color: #ffccff;
+    color: #9999ff;
+}
+
+#start:hover {
+    background-color: #ff99cc;
+    color: #fff;
+}
+
+#stop {
+    background-color: #c6a8ff;
+    color: #ffcafd;
+}
+
+#stop:hover {
+    background-color: #9999ff;
+    color: #fff;
+}
+
+.button-container button:active {
+    transform: scale(0.98);
+}
