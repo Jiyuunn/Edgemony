@@ -1,0 +1,23 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('./assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #ff69b4;
+  font-family: 'Comic Sans MS', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 img {
+  height: 50px;
+  margin: 0 10px;
+}
