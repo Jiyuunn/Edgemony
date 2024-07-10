@@ -1,0 +1,82 @@
+/* Card.css */
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 20px; /* Spazio tra le card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 1;
+    z-index: 1; /* Assicura che la scritta sia sopra l'immagine */
+}
+
+.card-image,
+.card-image-hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; /* Assicura che l'immagine sia sotto la scritta */
+    transition: transform 0.5s ease; /* Transizione per l'effetto di hover */
+}
+
+.card-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+}
+
+.card-hover .card-image-hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-hover .card-title-hover {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Assicura che la scritta sia sopra l'immagine */
+}
+
+.card:hover .card-image {
+    transform: scale(0);
+}
+
+.card:hover .card-hover {
+    transform: scale(1);
+}
+
+.card:hover .card-title {
+    opacity: 0;
+}
+
+.card:hover .card-hover .card-title-hover {
+    opacity: 1;
+}
