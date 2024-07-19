@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+h1 {
+  @apply text-3xl font-bold;
+}
+
+.modal-content {
+  @apply rounded-lg shadow-lg;
+}
+
+button {
+  @apply rounded-md border border-transparent;
+}
+
+button:hover {
+  @apply opacity-80;
+}
+
+button:focus {
+  @apply outline-none ring-2 ring-blue-500;
+}
