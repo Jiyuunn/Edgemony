@@ -1,0 +1,14 @@
+1. Principali Componenti del Mini-Compilatore:
+   - Tokenizzatore: Si occupa di scomporre il codice sorgente in una serie di token.
+   - Parser: Converte i token in un albero sintattico astratto (AST).
+   - Trasformatore: Modifica l'AST per adattarlo a una nuova struttura.
+   - Generatore di Codice: Converte l'AST modificato nel codice di destinazione.
+
+2. Cos'è e cosa fa la funzione tokenizer?
+   La funzione `tokenizer` legge il codice sorgente carattere per carattere, scomponendolo in una serie di token, che sono piccole unità sintattiche come parole chiave, simboli, numeri e stringhe.
+
+3. Perché è fondamentale avere un parser in un compilatore? Quale ruolo svolge?
+   Il parser è fondamentale perché prende i token prodotti dal tokenizzatore e li organizza in una struttura ad albero (AST), che rappresenta la struttura sintattica del programma. Questo permette al compilatore di analizzare e manipolare il codice in modo più strutturato.
+
+4. Se dovessi creare un conta caratteri in JavaScript, quali parti di questo compilatore ti sarebbero utili?
+   Per creare un conta caratteri, potrei utilizzare la parte del tokenizzatore che scorre il codice sorgente carattere per carattere. Potrei adattare questa funzione per contare i caratteri anziché generare token.
